@@ -43,6 +43,7 @@ function CreatePost({ setPosts, posts }) {
             className="inputField"
             required
             onChange={(e) => setTitle(e.target.value)}
+            value={title}
           />
         </div>
         <div className="flex flex-col">
@@ -57,6 +58,7 @@ function CreatePost({ setPosts, posts }) {
             autoComplete="username"
             required
             onChange={(e) => setUsername(e.target.value)}
+            value={username}
           />
         </div>
       </div>
@@ -71,6 +73,7 @@ function CreatePost({ setPosts, posts }) {
           className="w-full inputField"
           required
           onChange={(e) => setContent(e.target.value)}
+          value={content}
         />
       </div>
       <button
